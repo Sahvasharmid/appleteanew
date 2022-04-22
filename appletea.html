@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <title>appletea</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    img{
+        max-width: 100%;
+    }
+    #section1{
+        background-image: url("images/nature-3082832__480.jpg");
+        
+    }
+    .head{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+  h2{
+      padding-top: 60px;
+  }
+ .about{
+     padding-top: 20px;
+     padding-bottom: 20px;
+ }  
+ .design{
+     width: 100%;
+     display: grid;
+     grid-template-columns: 90% 10%;
+     padding-bottom: 10px;
+ }
+ .coding{
+     width: 100%;
+     display: grid;
+     grid-template-columns: 75% 25%;
+     padding-bottom: 10px;
+ }
+ .marketing{
+     width: 100%;
+     display: grid;
+     grid-template-columns: 55% 45%;
+ }
+ .b95,.b75,.b55{
+     border: 2px solid rgba(255, 166, 0, 0.541);
+     background-color: orange;
+     font-size: 8px;
+     font-weight: bold;
+   
+     
+ } 
+ .b5,.b25,.b45{
+     border: 2px solid grey;
+     background-color: grey;
+ }
+ 
+.p1{
+    margin-bottom: 0px;
+    text-align: center;
+}
+#section4{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+input[type="text"],input[type="email"]
+{
+background-color: rgba(253, 213, 137, 0.582);
+width: 25%;
+}
+#bn{
+    background-color:   rgba(7, 7, 7, 0.582);
+    color: white;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.input{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#nav{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.head2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+img[src="images/potrait1.jpg"],img[src="images/potrait2.jpg"],img[src="images/p3.jpg"],img[src="images/potrait4.jpg"]
+{
+    border-radius: 50%;
+    width: 200px;
+    border:2px solid yellow;
+    
+}
+#section6{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#section6 .active,.btn:hover{
+  background-color: rgba(194, 194, 184, 0.952);
+  color: white;
+}
+.card-img-overlay{
+    display: flex;
+     margin: -16px;
+    align-items: flex-end;
+
+    
+}
+.card-title,.card-text{
+    margin-left: 8px;
+}
+.card-text{
+    padding-bottom: 10px;
+}
+#section7{
+    background-image: url("images/dark.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+#name,#email
+{
+    width: 50%;
+}
+
+#textarea{
+    width: 50%;
+    
+    
+}
+textarea{
+    background-color: rgba(253, 213, 137, 0.582);
+}
+.lmenu ul{
+    display: flex;
+     flex-wrap: wrap;
+    margin: auto;
+}
+.lmenu ul{
+    width: 50%;
+}
+.lmenu ul li{
+    margin: auto;
+
+}
+.lmenu ul li a{
+    color: white;
+}
+
+form{
+    padding-bottom: 80px;
+}
+.overlay{
+    width: 100%;
+}
+@media only screen and (max-width:1180px)
+{
+    .card-group{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    #name,#email
+{
+    width: 50%;
+}
+
+#textarea{
+    width: 50%;
+    
+    
+}
+}
+@media only screen and (max-width:600px)
+{
+.input input[type="text"],.input input[type="email"]
+{
+width:100%;
+margin-bottom: 2px;
+}
+.input p{
+    text-align: center;
+}
+.input{
+    display: block;
+}
+.lmenu ul{
+    width: auto;
+}
+.card-group{
+    display: block;
+}
+#name,#email
+{
+    width: 100%;
+}
+
+#textarea{
+    width: 100%;
+    
+    
+}
+}
+
+</style>
+
+
+
+</head>
+<body>
+    <div class="container-fluid" id="section1">
+    <div class="container" id="section2">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="nav" style="background-color: rgba(8, 8, 8, 0.1);">
+            <a class="navbar-brand" href="#">LOGO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"><span class="navbar-toggler-icon">
+       
+                </button>
+       <div class="collapse navbar-collapse justify-content-end" id="navbar" >
+       <ul class="navbar-nav">
+       <li class="nav-item active"><a class="nav-link" href="#">HOME</a></li>
+       <li class="nav-item"><a class="nav-link" href="#section3">ABOUT</a></li>
+       <li class="nav-item"><a class="nav-link" href="#section6">PORTFOLIO</a></li>
+       <li class="nav-item"><a class="nav-link" href="#section7">CONTACT</a></li>
+       
+       </ul>
+       </div>
+         </nav>
+      <div class="head">
+    <h2 style="color: rgba(247, 240, 240, 0.856);">Nice to Meet You</h2>
+    <p style="color: rgba(247, 240, 240, 0.856);">we dont built websites we built brands....</p>
+    <p style="text-align: center;"><button type="button" class="btn btn-warning my-2">
+        Get in Touch
+    </button></p>
+    </div>
+</div>
+</div>
+<div class="container" id="section3">
+    <div class="about">
+        <h4 style="text-align: center;">ABOUT US</h4>
+        <p style="text-align: center;"> Shop products with sustainability certifications, as part of our commitment to help preserve the natural world. Time is fleeting</p>
+
+<div class="row">
+    <div class="col-12 col-lg-6">
+        <h6>WHAT CAN WE DO</h6>
+        <p>Shop products with sustainability certifications, as part of our commitment to help preserve the natural world. Time is fleeting
+            Shop products with sustainability certifications, as part of our commitment to help preserve the natural world. Time is fleeting
+            Shop products with sustainability certifications, as part of our commitment to help preserve the natural world. Time is fleeting
+            
+        </p>
+    </div>
+    <div class="col-12 col-lg-6">
+        <h6 class="dd">Design</h6>
+        <div class="design">
+        <div class="b95">
+           <p class="p1">95%</p>
+        </div>
+        <div class="b5"></div>
+        
+
+    </div>
+    <h6>Coding</h6>
+<div class="coding">
+    <div class="b75">
+        <p class="p1">75%</p>
+    </div>
+    <div class="b25"></div>
+    </div>
+<h6>Marketing</h6>
+<div class="marketing">
+    <div class="b75">
+        <p class="p1">55%</p>
+    </div>
+    <div class="b25"></div>
+    </div>
+</div>
+    </div>
+</div>
+</div>
+<div class="container-fluid bg-warning" id="section4">
+    <h5 style="text-align: center;">SUBSCRIBE TO OUR NEWS LETTER</h5>
+    <div class="container">
+    <div class="input">
+    <input type="text" placeholder="First name" class="border-0" style="text-align: center;">
+    <input type="text" placeholder="Last name" class="border-0" style="text-align: center;">
+    <input type="email" placeholder="Email"  class="border-0" style="text-align: center;">
+    
+<p style="margin-bottom: -16px;"><button class="btn" type="submit" id="bn">
+    SUBSCRIBE
+</button>
+</p>
+</div>
+</div>
+ </div>
+ <div class="container-fluid bg-dark" id="section5">
+     <div class="container">
+         <div class="head2">
+             <h3 style="text-align: center;color: rgba(255, 255, 255, 0.527);">OUR TEAM</h3>
+             <p style="text-align: center;color: rgba(255, 255, 255, 0.527);">We are a team because we respect, trust & care for each other. Our greatest strength is our team spirit & that will remain because a core of us come through the leagues together. </p>
+           <div class="card-group">
+             <div class="card bg-dark">
+                <p style="text-align: center;"><img src="images/potrait1.jpg" alt="image"></p>
+             <div class="card-body">
+                 <h5 class="card-title text-light" style="text-align: center;">John Britas</h5>
+                 <p class="card-text text-light"> chief executive officer (CEO), chief administrator officer, central executive officer, or just chief executive (CE), is one of a number of corporate ...
+                </p>
+               <p style="text-align: center;width: auto;"><button  class="btn btn-warning" style="font-size:24px;width: 50%;" > <i class="fa fa-envelope-o"></i>
+</button></p>
+             </div>
+
+             </div>
+        
+             <div class="card bg-dark">
+                <p style="text-align: center;"><img src="images/potrait2.jpg" alt="image"></p>
+             <div class="card-body">
+                 <h5 class="card-title text-light" style="text-align: center;">Chrisitina</h5>
+                 <p class="card-text text-light"> chief executive officer (CEO), chief administrator officer, central executive officer, or just chief executive (CE), is one of a number of corporate ...
+                </p>
+               <p style="text-align: center;"><button  class="btn btn-warning" style="font-size:24px;width: 50%;" > <i class="fa fa-envelope-o"></i>
+</button></p>
+             </div>
+             </div>
+             <div class="card bg-dark">
+                <p style="text-align: center;"><img src="images/p3.jpg" alt="image"></p>
+             <div class="card-body">
+                 <h5 class="card-title text-light" style="text-align: center;">Hanna Lia</h5>
+                 <p class="card-text text-light"> chief executive officer (CEO), chief administrator officer, central executive officer, or just chief executive (CE), is one of a number of corporate ...
+                </p>
+               <p style="text-align: center;width: auto;"><button  class="btn btn-warning" style="font-size:24px;width: 50%;" > <i class="fa fa-envelope-o"></i>
+</button></p>
+             </div>
+             </div>
+             <div class="card bg-dark">
+                <p style="text-align: center;"><img src="images/potrait4.jpg" alt="image"></p>
+             <div class="card-body">
+                 <h5 class="card-title text-light" style="text-align: center;">Ilhan Zubair</h5>
+                 <p class="card-text text-light"> chief executive officer (CEO), chief administrator officer, central executive officer, or just chief executive (CE), is one of a number of corporate ...
+                </p>
+               <p style="text-align: center;width: auto;"><button  class="btn btn-warning" style="font-size:24px;width: 50%;" > <i class="fa fa-envelope-o"></i>
+</button></p>
+             </div>
+             </div>
+</div>
+             </div>
+      
+      
+            </div>
+     </div>
+ </div>
+ <div class="container-fluid" id="section6">
+     <div class="container">
+         <h3 style="text-align: center;">PORTFOLIO</h3>
+         <p style="text-align: center;">A portfolio is a collection of financial investments like stocks, bonds, commodities, cash, and cash equivalents, including closed-end funds and exchange ...</p>
+   <p style="text-align: center;"> <a href="#" class="btn border-warning px-4 active" id="a" role="button">All</a>
+     <button type="button" class="btn border-warning">Design</button>
+     <button type="button" class="btn border-warning">Identity</button>
+     <button type="button" class="btn border-warning">Photography</button>
+     <button type="button" class="btn border-warning">Illustration</button></p>
+    <div class="row">
+        <div class="col-12 col-lg-4">
+     <div class="card">
+         <img src="images/nature-3082832__480.jpg" alt="img">
+         <div class="card-img-overlay">
+             <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+             <h4 class="card-title" style="color: white;">title</h4>
+             <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+</div>
+            </div>
+            </div>
+         </div>
+         <div class="col-12 col-lg-4">
+         <div class="card">
+            <img src="images/nt2.jpg" alt="img">
+            <div class="card-img-overlay">
+                <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+                <h4 class="card-title" style="color: white;">title</h4>
+                <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+   </div>
+
+</div>
+</div>
+     </div>
+     <div class="col-12 col-lg-4">
+     <div class="card">
+        <img src="images/nt4.jpg" alt="img">
+        <div class="card-img-overlay">
+            <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+            <h4 class="card-title" style="color: white;">title</h4>
+            <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+</div>
+           </div>
+ </div>
+ </div></div>
+ <div class="row pt-3">
+    <div class="col-12 col-lg-4 ">
+ <div class="card">
+     <img src="images/nature-3082832__480.jpg" alt="img">
+     <div class="card-img-overlay">
+         <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+         <h4 class="card-title" style="color: white;">title</h4>
+         <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+</div>
+        </div>
+        </div>
+     </div>
+     <div class="col-12 col-lg-4">
+     <div class="card">
+        <img src="images/nt5.jpg" alt="img">
+    <div class="card-img-overlay">
+            <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+            <h4 class="card-title" style="color: white;">title</h4>
+            <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+</div>
+
+</div>
+</div>
+ </div>
+ <div class="col-12 col-lg-4">
+ <div class="card">
+    <img src="images/nt6.jpg" alt="img">
+    <div class="card-img-overlay">
+        <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+        <h4 class="card-title" style="color: white;">title</h4>
+        <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+</div>
+       </div>
+</div>
+
+</div>
+</div>
+<div class="row pt-3">
+    <div class="col-12 col-lg-4">
+ <div class="card">
+     <img src="images/nature-3082832__480.jpg" alt="img">
+     <div class="card-img-overlay">
+         <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+         <h4 class="card-title" style="color: white;">title</h4>
+         <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+</div>
+        </div>
+        </div>
+     </div>
+     <div class="col-12 col-lg-4">
+     <div class="card">
+        <img src="images/nt5.jpg" alt="img">
+    <div class="card-img-overlay">
+            <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+            <h4 class="card-title" style="color: white;">title</h4>
+            <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+</div>
+
+</div>
+</div>
+ </div>
+ <div class="col-12 col-lg-4">
+ <div class="card">
+    <img src="images/nt6.jpg" alt="img">
+    <div class="card-img-overlay">
+        <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+        <h4 class="card-title" style="color: white;">title</h4>
+        <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+</div>
+       </div>
+</div>
+
+</div>
+        </div>
+ </div>
+ </div>
+<div class="container-fluid py-5" id="section7">
+    <div class="container-sm">
+    <h5 style="color: wheat; text-align: center;">CONTACT</h5>
+    <form style="text-align: center;">
+        <input type="text" name="text" placeholder="enter your name" id="name"><br><br>
+        <input type="text" name="text" placeholder="enter your Address" id="name"><br><br>
+        <input type="text" name="text" placeholder="enter your city" id="name"><br><br>
+        <input type="email" name="mail" placeholder="enter your email address" id="email"><br><br>
+        <textarea rows="4" cols="50" placeholder="enter your email msg..." id="textarea"></textarea><br><br>
+      <button type="submit" class="btn btn-warning" style="width:auto;">
+          Submit
+      </button>
+
+
+    </form>
+    <footer>
+    <div class="lmenu">
+      <ul style="list-style: none;">
+        <li class="nav-item active"><a class="nav-link" href="#">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section3">ABOUT</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section6">PORTFOLIO</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section7">CONTACT</a></li>
+        
+        </ul>
+        
+        </div>
+    </div>
+    <p style="color: white;text-align: center;">Copyright 	&copy; LogoDesign2020 All Rights Reserved</p>
+</div>
+
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
